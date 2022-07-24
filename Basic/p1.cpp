@@ -15,3 +15,25 @@
 
 // 	return 0;
 // }
+
+
+
+// Task 2: Take values of length and breadth of a rectangle from user and check if it is square or not.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num1, num2;
+	cout << "Length:";
+	cin>> num1;
+	cout << "Breadth:";
+	cin>> num2;
+
+	if(num1 == num2) {
+		cout << "This is a square!";
+	} else {
+		cout << "This is not a square";
+	}
+	return 0;
+}
