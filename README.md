@@ -47,3 +47,28 @@ int main() {
 ```
 
 </details>
+
+<details>
+  <summary>Task 3: Write a program to print absolute vlaue of a number entered by user</summary>
+
+```
+#include <iostream>
+using namespace std;
+
+main() {
+    int number, abs;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if(number < 0) {
+        abs = number * -1;
+    } else {
+        abs = number;
+    }
+
+    cout << "Absolute value of " << number << " is " << abs;
+    return 0;
+}
+```
+
+</details>

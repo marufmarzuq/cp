@@ -20,20 +20,42 @@
 
 // Task 2: Take values of length and breadth of a rectangle from user and check if it is square or not.
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+// 	int num1, num2;
+// 	cout << "Length:";
+// 	cin>> num1;
+// 	cout << "Breadth:";
+// 	cin>> num2;
+
+// 	if(num1 == num2) {
+// 		cout << "This is a square!";
+// 	} else {
+// 		cout << "This is not a square";
+// 	}
+// 	return 0;
+// }
+
+
+
+// Task 3: Write a program to print absolute vlaue of a number entered by user
+
 #include <iostream>
 using namespace std;
 
-int main() {
-	int num1, num2;
-	cout << "Length:";
-	cin>> num1;
-	cout << "Breadth:";
-	cin>> num2;
+main() {
+    int number, abs;
+    cout << "Enter a number: ";
+    cin >> number;
 
-	if(num1 == num2) {
-		cout << "This is a square!";
-	} else {
-		cout << "This is not a square";
-	}
-	return 0;
+    if(number < 0) {
+        abs = number * -1;
+    } else {
+        abs = number;
+    }
+
+    cout << "Absolute value of " << number << " is " << abs;
+    return 0;
 }
