@@ -42,20 +42,45 @@
 
 // Task 3: Write a program to print absolute vlaue of a number entered by user
 
+// #include <iostream>
+// using namespace std;
+
+// main() {
+//     int number, abs;
+//     cout << "Enter a number: ";
+//     cin >> number;
+
+//     if(number < 0) {
+//         abs = number * -1;
+//     } else {
+//         abs = number;
+//     }
+
+//     cout << "Absolute value of " << number << " is " << abs;
+//     return 0;
+// }
+
+
+// Task 4: A student will not be allowed to sit in exam if his/her attendence is less than 75%
+
 #include <iostream>
 using namespace std;
 
 main() {
-    int number, abs;
-    cout << "Enter a number: ";
-    cin >> number;
+    float total, attended, percent;
+    cout << "Number of class held: ";
+    cin >> total;
+    cout << "Number of class attended: ";
+    cin >> attended;
 
-    if(number < 0) {
-        abs = number * -1;
+    percent = (attended / total) * 100;
+    cout << "Total percentage of attendence is "<< percent << "%" << endl;
+    
+    if(percent < 75) {
+        cout << "Student is not allowed to sit in exam";
     } else {
-        abs = number;
+        cout << "Student is allowed to sit in exam";
     }
 
-    cout << "Absolute value of " << number << " is " << abs;
     return 0;
 }

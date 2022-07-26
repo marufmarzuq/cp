@@ -72,3 +72,29 @@ main() {
 ```
 
 </details>
+
+<details>
+  <summary>Task 4: A student will not be allowed to sit in exam if his/her attendence is less than 75%</summary>
+
+```
+main() {
+    float total, attended, percent;
+    cout << "Number of class held: ";
+    cin >> total;
+    cout << "Number of class attended: ";
+    cin >> attended;
+
+    percent = (attended / total) * 100;
+    cout << "Total percentage of attendence is "<< percent << "%" << endl;
+
+    if(percent < 75) {
+        cout << "Student is not allowed to sit in exam";
+    } else {
+        cout << "Student is allowed to sit in exam";
+    }
+
+    return 0;
+}
+```
+
+</details>
