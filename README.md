@@ -77,6 +77,9 @@ main() {
   <summary>Task 4: A student will not be allowed to sit in exam if his/her attendence is less than 75%</summary>
 
 ```
+#include <iostream>
+using namespace std;
+
 main() {
     float total, attended, percent;
     cout << "Number of class held: ";
@@ -91,6 +94,34 @@ main() {
         cout << "Student is not allowed to sit in exam";
     } else {
         cout << "Student is allowed to sit in exam";
+    }
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+  <summary>Task 5: Program to Check Given Character is Uppercase, Lowercase, Digit or Special Character</summary>
+
+```
+#include <iostream>
+using namespace std;
+
+main() {
+    char ch;
+    cout << "Write a character: ";
+    cin >> ch;
+
+    if(48 <= ch && ch <= 57) {
+        cout << ch << " is a number";
+    } else if (65 <= ch && ch <= 90) {
+        cout << ch << " is a uppercase character";
+    } else if (97 <= ch && ch <= 122) {
+        cout << ch << " is a lowercase character";
+    } else {
+        cout << ch << " is a Special character";
     }
 
     return 0;
